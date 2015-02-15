@@ -12,7 +12,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sp32_dev
+  database: sp32_lts_dev
   pool: 5
   username: tuser
   password: tpw
@@ -25,7 +25,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sp32_test
+  database: sp32_lts_test
   pool: 5
   username: tuser
   password: tpw
@@ -35,7 +35,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_app_3_2_production
+  database: sample_app_3_2_lts_production
   pool: 5
   username: root
   password:

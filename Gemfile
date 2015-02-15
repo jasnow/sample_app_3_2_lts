@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 
-gem 'rails', '3.2.21'
+gem 'rails', :git => 'https://github.com/makandra/rails.git', :branch => '3-2-fixes'
 
 gem 'rack'
 
