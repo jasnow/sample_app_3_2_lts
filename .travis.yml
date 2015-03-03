@@ -1,12 +1,11 @@
 language: ruby
 rvm:
 - 2.1.5
-
-env:
-  global:
-    secure: M4SUPhx20BmBiX3defVjog5/OmX9NTuekcuRDIsgC1ml0FD2RO1WCoqhFYSVeltwQ2fekKZkW/jTcuVA5Sq7pTIC3D6YwTfThOTWns4nWee9q//Imr+VUVDmhwAAYJ8H1+r/AOwzpp9vsLWgd7rW1UJxlkfeTkA2Tse0DFOHqs8=
-
 before_script:
 - psql -c 'create role sample_app_3_2_lts SUPERUSER LOGIN;' postgres
 - psql -c 'create database sample_app_3_2_lts_test;' -U postgres postgres
 - bundle exec rake db:migrate
+env:
+  global:
+  - secure: M4SUPhx20BmBiX3defVjog5/OmX9NTuekcuRDIsgC1ml0FD2RO1WCoqhFYSVeltwQ2fekKZkW/jTcuVA5Sq7pTIC3D6YwTfThOTWns4nWee9q//Imr+VUVDmhwAAYJ8H1+r/AOwzpp9vsLWgd7rW1UJxlkfeTkA2Tse0DFOHqs8=
+  - secure: VvClJYTnxvMYj/9cegjhdiLOYcBmePt9PbnES/S4RBZ4BFxCDCkKprKdcuKiyDAV4V0jW/z+RxVVzwArwsnkpPOkW+HhdtECE0B3CMo/ckF99vwUrjBEB6yH4pt+grSnXuA2o6SLlkoD3MmejVWrDejkah/0kUZY5+7DXisnIJw=
