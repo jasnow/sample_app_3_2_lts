@@ -49,9 +49,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    annotate (2.6.5)
+    annotate (2.6.6)
       activerecord (>= 2.3.0)
-      rake (>= 0.8.7)
+      rake (~> 10.4.2, >= 10.4.2)
     ansi (1.5.0)
     arel (3.0.3)
     ast (2.0.0)
