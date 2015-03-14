@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-
 gem 'rails', :git => 'https://github.com/makandra/rails.git', :branch => '3-2-fixes'
+gem 'ffi', '1.9.6'
+
+gem 'rake'
 
 gem 'rack'
 
