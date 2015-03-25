@@ -71,7 +71,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1)
-    coveralls (0.7.11)
+    coveralls (0.7.12)
       multi_json (~> 1.10)
       rest-client (>= 1.6.8, < 2)
       simplecov (~> 0.9.1)
@@ -164,7 +164,8 @@ GEM
     rake (10.4.2)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.7.3)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rspec-collection_matchers (1.1.2)
