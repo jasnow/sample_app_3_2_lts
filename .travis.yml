@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.1.5
+- 2.1.6
 before_script:
 - psql -c 'create role sample_app_3_2_lts SUPERUSER LOGIN;' postgres
 - psql -c 'create database sample_app_3_2_lts_test;' -U postgres postgres
