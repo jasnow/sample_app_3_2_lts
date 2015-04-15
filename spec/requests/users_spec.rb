@@ -21,7 +21,8 @@ describe "Users", :type => :request do
         fill_in :email,    :with => ""
         fill_in :password, :with => ""
         click_button
-        expect(response).to have_selector("div.flash.error", :content => "Invalid")
+        expect(response).to have_selector("div.flash.error",
+          :content => "Invalid")
       end
 
     end

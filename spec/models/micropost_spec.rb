@@ -66,7 +66,8 @@ describe Micropost, :type => :model do
     end
 
     it "should not include an unfollowed user's microposts" do
-      expect(Micropost.from_users_followed_by(@user)).not_to include(@third_post)
+      expect(Micropost.from_users_followed_by(@user)
+        ).not_to include(@third_post)
     end
   end
 end

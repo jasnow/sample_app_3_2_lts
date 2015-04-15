@@ -19,7 +19,8 @@ describe PagesController, :type => :controller do
       end
 
       it "should have the right title" do
-        expect(response).to have_selector("title", :content => "#{@base_title}Home")
+        expect(response).to have_selector("title",
+          :content => "#{@base_title}Home")
       end
     end
 
@@ -33,10 +34,12 @@ describe PagesController, :type => :controller do
 
       it "should have the right follower/following contents" do
         get :home
-        expect(response).to have_selector("a", :href => following_user_path(@user),
-                                           :content => "0 following")
-        expect(response).to have_selector("a", :href => followers_user_path(@user),
-                                           :content => "1 follower")
+        expect(response).to have_selector("a",
+          :href => following_user_path(@user),
+          :content => "0 following")
+        expect(response).to have_selector("a",
+          :href => followers_user_path(@user),
+          :content => "1 follower")
       end
     end
   end
@@ -63,7 +66,8 @@ describe PagesController, :type => :controller do
 
     it "should have the right title" do
       get 'about'
-      expect(response).to have_selector("title", :content => @base_title + "About")
+      expect(response).to have_selector("title",
+        :content => @base_title + "About")
     end
 
   end
@@ -76,7 +80,8 @@ describe PagesController, :type => :controller do
 
     it "should have the right title" do
       get 'help'
-      expect(response).to have_selector("title", :content => @base_title + "Help")
+      expect(response).to have_selector("title",
+        :content => @base_title + "Help")
     end
   end
 
