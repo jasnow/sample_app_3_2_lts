@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', :git => 'https://github.com/makandra/rails.git', :branch => '3-2-fixes'
+gem 'rails', git: 'https://github.com/makandra/rails.git', branch: '3-2-fixes'
 
 gem 'rake'
 gem 'rack'
@@ -13,15 +13,16 @@ gem 'jquery-rails'
 gem 'nokogiri'
 gem 'json'
 gem 'holepicker'
+gem 'overcommit'
 
 group :development do
   gem 'annotate'
   gem 'faker'
 
   # See Railscast #402 for more info.
-  gem 'better_errors' 
+  gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'dawnscanner', :require => false
+  gem 'dawnscanner', require: false
 end
 
 group :development, :test do
@@ -36,7 +37,7 @@ group :test do
   gem 'webrat'
 
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', require: false
 end
 
 group :production do
