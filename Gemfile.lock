@@ -49,7 +49,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    annotate (2.6.8)
+    annotate (2.6.10)
       activerecord (>= 3.2, <= 4.3)
       rake (~> 10.4)
     ansi (1.5.0)
@@ -191,7 +191,7 @@ GEM
       rspec-mocks (~> 2.99.0)
     ruby_parser (3.6.6)
       sexp_processor (~> 4.1)
-    sass (3.4.13)
+    sass (3.4.14)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
