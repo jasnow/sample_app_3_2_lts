@@ -54,7 +54,7 @@ GEM
       rake (~> 10.4)
     ansi (1.5.0)
     arel (3.0.3)
-    ast (2.0.0)
+    ast (2.1.0)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
