@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', git: 'https://github.com/makandra/rails.git', branch: '3-2-fixes'
+gem 'rails', git: 'https://github.com/makandra/rails.git', branch: '3-2-stable'
 
 gem 'rake'
 gem 'rack'
